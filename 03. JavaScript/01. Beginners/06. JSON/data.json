@@ -1,0 +1,11 @@
+{
+    "name" : "Ayush Acharjya",
+    "age" : 20,
+    "email" : "xyz@gmail.com",
+    "isStrudent" : true,
+    "hobbies" : ["Reading", "Running", "Cooking"],
+    "address" : {
+        "city" : "London",
+        "lives_there" : true
+    }
+}
