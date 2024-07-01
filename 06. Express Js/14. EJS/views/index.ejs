@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME 🏡</title>
+  </head>
+
+  <body>
+    <!-- Display Variable -->
+    <%= name %>
+    <br />
+    My name is : <%= name.toUpperCase() %>
+
+    <!-- conditional rendering -->
+    <% if(userId === 20){ %>
+    <h1>User ID : <%= userId %></h1>
+    <% } %>
+
+    <!-- else block -->
+    <% if(userId === 20){ %>
+    <h1>User ID : <%= userId %></h1>
+    <% } else if (userId === 30) { %>
+    <h2>UserID <%= userId %></h2>
+    <% } else {%>
+    <h1>Nothing ...</h1>
+    <% } %>
+
+    <!-- For Loop -->
+    <% for (let i = 0; i < 3; i++) { %> Hi Ayush <br />
+    <% } %>
+
+    <!-- Built-in Functions -->
+    <% var current = new Date(); %> <%= current %>
+
+    <!-- Include/Partials -->
+    <!-- Partials allows us to seperate our ejs code into smaller multiple components. -->
+    <!-- So later if something unexpected happens in UI, we can quickly jump into specific partial and solve it. -->
+    <!-- include(folder/filename, object) -->
+  </body>
+</html>
